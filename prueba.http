@@ -1,0 +1,43 @@
+### Registro de Niñera (Prueba Limpia)
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "heisseltest@nani.hn",
+  "password": "PasswordSeguro123",
+  "nombre": "heissel",
+  "apellido": "Guerreo",
+  "telefono": "+50438897888",
+  "ubicacion": "Tegucigalpa",
+  "fecha_nacimiento": "2000-05-15",
+  "rol": "ninera",
+  "presentacion": "CEO de Nani y desarrolladora backend.",
+  "experiencia": "3 años",
+  "habilidades": ["Primeros Auxilios", "Cocina Infantil"],
+  "certificaciones": ["primeros auxilios"]
+}
+
+### Registro de Cliente (Padre de Familia)
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "cliente.nani.test@gmail.com",
+  "password": "PasswordSeguro123",
+  "nombre": "Roberto",
+  "apellido": "Sosa",
+  "telefono": "+504 8888-1111",
+  "ubicacion": "San Pedro Sula",
+  "rol": "cliente"
+}
+
+#######3## verificacion
+
+POST http://localhost:3000/biometria-test
+Content-Type: application/json
+
+{
+  "auth_id": "a64279ad-5ee8-405f-ad44-3d5df5f26566",
+  "dni_url": "C:/Users/USUARIO/Documents/1PERIODO-2026/Industria/proyecto/backend.nestjs/imagenprueba/dni.jpeg",
+  "foto_instante": "C:/Users/USUARIO/Documents/1PERIODO-2026/Industria/proyecto/backend.nestjs/imagenprueba/foto_instante.jpeg"
+}
